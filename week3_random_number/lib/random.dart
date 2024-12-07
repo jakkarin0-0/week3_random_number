@@ -20,11 +20,12 @@ class _RandomPageState extends State<RandomPage> {
   Widget build(BuildContext context) {
    
     
-    return Scaffold(
-      
-        appBar: AppBar(title: const Text('game random')),
-        body: 
-           Center(
+    return Scaffold(  
+        
+        appBar: AppBar(title: const Text('game random') , backgroundColor: Colors.red,),
+        body:
+          
+          Center(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
           child: Column(children: [
@@ -39,14 +40,14 @@ class _RandomPageState extends State<RandomPage> {
             const  SizedBox(height: 20),
 
             Text(txt),
-            Text(r.toString()),
-            Text(x.toString()),
+            // Text(r.toString()),
+            // Text(x.toString()),
               
             
             const  SizedBox(height: 20),
             
             Row(
-              
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
               
               TextButton(
@@ -64,7 +65,7 @@ class _RandomPageState extends State<RandomPage> {
                     txt = 'เดาตัวเลข 1 - 9';
                   });
                 }, 
-                child: Text('เริ่มใหม่',style: TextStyle(backgroundColor: Colors.green ),)
+                child: Text('เริ่มใหม่',style: TextStyle(backgroundColor: Colors.blue ),)
                 ),
 
             ],)
